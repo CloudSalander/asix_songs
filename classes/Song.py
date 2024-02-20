@@ -13,3 +13,5 @@ class Song:
         self.seconds = seconds
         self.genre = genre
     
+    def play(self):
+        print("Reproduciendo "+self.name+" ...")
