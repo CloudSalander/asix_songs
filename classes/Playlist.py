@@ -3,5 +3,19 @@ class Playlist:
         self.title = title
         self.songs = songs
     
-    
+    def getLongestSong(self):
+        max_seconds = 0
+        longest_song = None
+        for song in self.songs:
+            if (song.minutes*60 + song.seconds) > max_seconds:
+                max_seconds = song.minutes*60 + song.seconds
+                longest_song = song
+        return longest_song
+
+    def getSongsByGenre(self,genre):
+        songs = []
+        for song in self.songs:
+            if song.genre == genre: songs.append(song)
+        return songs
+
 
