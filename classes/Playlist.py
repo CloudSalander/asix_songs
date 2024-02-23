@@ -18,4 +18,12 @@ class Playlist:
             if song.genre == genre: songs.append(song)
         return songs
 
+    def play(self):
+        for song in self.songs:
+            song.play()     
 
+    def addSong(self,song):
+        self.songs.append(song)
+
+    def deleteSong(self,song):
+        self.songs.remove(song)
