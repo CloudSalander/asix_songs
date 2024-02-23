@@ -21,5 +21,5 @@ for song in dreampop_songs:
 
 #pl.addSong(song4)
 pl.play()
-pl.deleteSong()
+pl.deleteSong(song1)
 pl.play()
